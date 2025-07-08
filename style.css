@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+}
+
+.header{
+  height: 40px;
+  background-color: black;
+  display:flex;
+  flex-direction: row;
+  height: 80px;
+}
+
+.logo-name img{
+  display: inline-block;
+  object-fit: cover;
+  object-position: center;
+  width: 80px;
+  height: auto;
+  border-radius: 40px;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction: row;
+  background-color: black;
+  margin-left: auto;
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.resume{
+  margin-right: 60px;
+  transition: text-shadow 0.4s;
+}
+
+.resume:hover{
+  cursor:pointer;
+  opacity: 0.9;
+  text-shadow:
+    0 2px 16px white,
+    0 0 32px white;
+}
+.about{
+  margin-right: 60px;
+  transition: text-shadow 0.4s;
+}
+
+.about:hover{
+  cursor:pointer;
+  opacity: 0.9;
+  text-shadow:
+    0 2px 16px white,
+    0 0 32px white;
+}
+
+.contact{
+  margin-right: 40px;
+  transition: text-shadow 0.4s;
+}
+
+.contact:hover{
+  cursor:pointer;
+  opacity: 0.9;
+  text-shadow:
+    0 2px 16px white,
+    0 0 32px white;
+}
+
+.linkedin img{
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.github img{
+  width: 40px;
+  height: auto;
+  color: black;
+  border-radius:50px;
+}
