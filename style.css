@@ -20,17 +20,17 @@ body{
 }
 
 .contact-info{
-  display:flex;
-  flex-direction: row;
+  display: flex;
+  align-items: center; /* Ensures text and icons share the same vertical center */
   background-color: black;
   margin-left: auto;
   color: white;
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 
 .resume{
-  margin-right: 60px;
+  margin-right: 40px;
   transition: text-shadow 0.4s;
 }
 
@@ -42,7 +42,7 @@ body{
     0 0 32px white;
 }
 .about{
-  margin-right: 60px;
+  margin-right: 40px;
   transition: text-shadow 0.4s;
 }
 
@@ -55,26 +55,38 @@ body{
 }
 
 .contact{
-  margin-right: 40px;
+  margin-right: 30px;
   transition: text-shadow 0.4s;
 }
 
 .contact:hover{
   cursor:pointer;
-  opacity: 0.9;
+  opacity: 0.9;  
   text-shadow:
     0 2px 16px white,
     0 0 32px white;
 }
 
 .linkedin img{
-  width: 40px;
-  margin-bottom: 20px;
+  vertical-align: middle; /* aligns with text */
+  height: 40px; /* match the text height visually */
+  width: auto;
+  margin-right: 20px;
 }
 
 .github img{
-  width: 40px;
-  height: auto;
-  color: black;
-  border-radius:50px;
+  vertical-align: middle; /* aligns with text */
+  height: 30px; /* match the text height visually */
+  width: auto;
+  border-radius: 50%;
+  margin-right: 20px; 
+}
+
+.linkedin img:hover, 
+.github img:hover{
+  cursor: pointer;
+  opacity: 0.9;
+  text-shadow:
+    0 2px 16px white,
+    0 0 32px white;
 }
