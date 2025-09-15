@@ -8,6 +8,13 @@ body{
   display:flex;
   flex-direction: row;
   height: 80px;
+  font-family: 'Bitcount Prop Double', sans-serif;
+}
+.name{
+  color: white;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 
 .logo-name img{
@@ -89,4 +96,87 @@ body{
   text-shadow:
     0 2px 16px white,
     0 0 32px white;
+}
+
+.main-content{
+  height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Bitcount Prop Double', sans-serif;
+
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;              /* allows wrapping on smaller screens */
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 100px 60px 60px 60px;            /* relative spacing (scales with screen size) */
+  background-color: black;
+  color: white;
+  font-family: 'Bitcount Prop Double', sans-serif;
+}
+
+.mypic img {
+  width: clamp(200px, 25vw, 500px); /* min 200px, scales with screen, max 500px */
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  max-width: 700px;
+  font-size: clamp(0.9rem, 1.2vw, 1.3rem); /* scales with screen width */
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 0;
+}
+
+
+.resume-button {
+  align-self: flex-end;         /* align button with bottom of image */
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+}
+
+.resume-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;   /* underline text on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;     /* stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .mypic img {
+  width: 13%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+  .about-text {
+    text-align: center;
+  }
+
+  .resume-button {
+    align-self: center;         /* center button under text */
+    margin-top: 20px;
+  }
 }
