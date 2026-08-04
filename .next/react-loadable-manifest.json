@@ -1,1 +1,28 @@
-{}
+{
+  "app/page.tsx -> @/components/Drone3D": {
+    "id": "app/page.tsx -> @/components/Drone3D",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Drone3D_tsx.js"
+    ]
+  },
+  "app/page.tsx -> @/components/Gyroscope3D": {
+    "id": "app/page.tsx -> @/components/Gyroscope3D",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Gyroscope3D_tsx.js"
+    ]
+  },
+  "app/page.tsx -> @/components/RobotCar3D": {
+    "id": "app/page.tsx -> @/components/RobotCar3D",
+    "files": [
+      "static/chunks/_app-pages-browser_components_RobotCar3D_tsx.js"
+    ]
+  },
+  "node_modules/@react-three/drei/core/VideoTexture.js -> hls.js": {
+    "id": "node_modules/@react-three/drei/core/VideoTexture.js -> hls.js",
+    "files": []
+  },
+  "node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision": {
+    "id": "node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision",
+    "files": []
+  }
+}

@@ -85,11 +85,12 @@ pre,
 
 html {
   scroll-behavior: smooth;
-  background: #0b0d10;
+  background: #EDEAE2;
 }
 
 body {
-  background: #0b0d10;
+  background: #EDEAE2;
+  color: #0F0E0C;
   position: relative;
 }
 
@@ -102,16 +103,16 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(240, 58, 0, 0.2);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(59, 130, 246, 0.4);
+  background: rgba(240, 58, 0, 0.4);
 }
 
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(240, 58, 0, 0.15);
 }
 
 body::before {
