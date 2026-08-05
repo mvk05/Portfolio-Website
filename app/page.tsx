@@ -28,10 +28,10 @@ type Project = {
 const projects: Project[] = [
   {
     id: 'drone', num: '01', title: 'Autonomous Farming Drone',
-    year: '2026 – Present', type: 'ROBOTICS / HARDWARE', tagline: 'F450 Quad · PX4 · ROS 2',
-    description: 'Built an F450 quadcopter from scratch using the Pixhawk 6C Mini flight controller paired with an NVIDIA Jetson Orin Nano over MAVLink/UART. ROS 2 mission nodes handle GPS lawnmower surveys, georeferenced image capture, and autonomous replanning. A downward-facing IMX219 camera feeds a CV pipeline that maps crop stress to GPS coordinates.',
-    why: 'Wanted to build something that flies itself and actually does useful work.',
-    stack: ['PX4', 'ROS 2', 'MAVSDK', 'OpenCV', 'Python', 'C++', 'Jetson Orin Nano'],
+    year: '2026 – Present', type: 'ROBOTICS / HARDWARE', tagline: 'F450 Quad · PX4 · Raspberry Pi 5',
+    description: 'F450-class quadcopter built for precision agricultural monitoring using a split-compute architecture. A Raspberry Pi 5 onboard runs MAVSDK + ROS 2 Jazzy to execute GPS lawnmower waypoint surveys and capture georeferenced aerial imagery via a downward-facing IMX219-160 camera — communicating with the Matek H743-SLIM flight controller (PX4) over MAVLink/UART. After landing, captured data transfers over WiFi to a ground-based Jetson Orin Nano, which runs YOLOv8 inference on the imagery, builds a 2D crop health map, and autonomously replans targeted follow-up missions at flagged zones.',
+    why: 'Wanted to build something that flies itself and does genuinely useful work — full autonomy from survey to analysis to follow-up mission, no human in the loop.',
+    stack: ['PX4', 'ROS 2', 'MAVSDK', 'YOLOv8', 'OpenCV', 'Python', 'C++', 'Raspberry Pi 5', 'Jetson Orin Nano'],
   },
   {
     id: 'northstar', num: '02', title: 'Northstar',
